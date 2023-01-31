@@ -1,0 +1,106 @@
+:root {
+    --primary : #AE78B0;
+    --secondary : #4B3C52;
+    --text-primary : #4B3C52;
+    --white : #FFFFFF
+
+}
+
+@font-face {
+    font-family: elMissiri;
+    src: url(/assets/font/elmessiri-regular.otf) format("opentype");
+}
+
+html {
+    font-family: elMissiri;
+}
+
+body {
+    overflow: hidden;
+}
+
+svg {
+    margin: 0 auto;
+    height: 10vh;
+}
+
+
+/*********** NAVIGATION **************/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary);
+    color: var(--white);
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+/*********** HERO **************/
+
+.hero {
+    height: 80vh;
+    width: 99vw;
+    background-image: url(../assets/img/Vector.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-section, 
+.left-section {
+    width: 50%;
+    height: 100%;
+}
+
+
+#title {
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-top: 8rem;
+}
+
+.cat {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-img {
+    width: 80%;
+    height: 80%;
+}
+
+/***************** DIVIDER *************/
+
+.divider {
+    height: 10vh;
+    background-color: #ae78b094;
+}
+
+.right-section p {
+    font-size: 24px;
+}
